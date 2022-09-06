@@ -6,7 +6,6 @@ import Login from './components/login.component'
 import SignUp from './components/signup.component'
 import Home from './components/home'
 import About from './components/about'
-import Forgot from './components/forgot'
 import Homepage from './components/homepage'
 import NoteState from './context/notes/NoteState'
 
@@ -46,7 +45,6 @@ export default function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/sign-in" element={<Login />} />
                 <Route path="/sign-up" element={<SignUp />} />
-                <Route path="/forgot" element={<Forgot />} />
               </Routes>
             </div>
           </div>

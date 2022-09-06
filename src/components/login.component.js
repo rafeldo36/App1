@@ -55,9 +55,6 @@ let navigate = useNavigate();
       <div className="d-grid">
         <button className="btn btn-primary">Submit</button>
       </div>
-      <p className="forgot-password text-right">
-        Forgot <a href='forgot'>password?</a>
-      </p>
     </form>
     </>
   )
