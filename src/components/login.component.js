@@ -20,7 +20,6 @@ let navigate = useNavigate();
     // save the authtoken and redirect
     localStorage.setItem('token',json.authtoken);
     navigate("/homepage")
-    alert("Logged in Succesfully")
   }
   else{
     alert("Invalid Credentials")

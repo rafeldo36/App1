@@ -9,7 +9,7 @@ export default function Homepage() {
     if (!localStorage.getItem('token')) {
       navigate("/sign-in")
     }
-  }, [])
+  })
   return (
     <div>
       <h1> Welcome To UYO Rooms </h1>
