@@ -43,9 +43,9 @@ export default function Homepage() {
         <div className='my-1'>
           <h6>Guests :</h6><IncDecCounter />
         </div>
-        <button className="btn btn-success my-2"
+        <button className="btn btn-success my-2 mx-2"
 onClick={() => {
-  navigate("/sign-in")
+  navigate("/vasai")
 }}
 >
 Search 

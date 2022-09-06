@@ -9,6 +9,7 @@ import About from './components/about'
 import Homepage from './components/homepage'
 import NoteState from './context/notes/NoteState'
 import Logout from './components/logout'
+import Vasai from './city/vasai'
 
 export default function App() {
   return (
@@ -50,6 +51,7 @@ export default function App() {
                 <Route path="/sign-in" element={<Login />} />
                 <Route path="/sign-up" element={<SignUp />} />
                 <Route path="/logout" element={<Logout />} />
+                <Route path="/vasai" element={<Vasai />} />
               </Routes>
             </div>
           </div>

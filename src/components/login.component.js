@@ -51,7 +51,7 @@ let navigate = useNavigate();
         />
        
       </div>
-      <div className="d-grid">
+      <div >
         <button className="btn btn-primary">Submit</button>
       </div>
     </form>
