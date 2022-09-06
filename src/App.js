@@ -8,12 +8,13 @@ import Home from './components/home'
 import About from './components/about'
 import Homepage from './components/homepage'
 import NoteState from './context/notes/NoteState'
+import Logout from './components/logout'
 
 export default function App() {
-
   return (
     <><NoteState>
       <Router>
+
         <div className="App">
           <nav className="navbar navbar-expand-lg navbar-light fixed-top">
             <div className="container">
@@ -34,6 +35,10 @@ export default function App() {
                   </li>
                 </ul>
               </div>
+              {localStorage.getItem('token')?
+              <Logout/>
+              :null
+            }
             </div>
           </nav>
           <div className="auth-wrapper">
@@ -45,6 +50,7 @@ export default function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/sign-in" element={<Login />} />
                 <Route path="/sign-up" element={<SignUp />} />
+                <Route path="/logout" element={<Logout />} />
               </Routes>
             </div>
           </div>

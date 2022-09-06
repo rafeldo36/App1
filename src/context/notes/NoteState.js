@@ -1,6 +1,6 @@
 
 import NoteContext from "./noteContext";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const NoteState = (props) => {
    const notesInitial = [
