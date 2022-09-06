@@ -35,12 +35,11 @@ export default function App() {
                   </li>
                 </ul>
               </div>
-              {localStorage.getItem('token') ?
-                <Logout />
-                : null
-              }
-            </div>
+         <Logout/>
+               </div>
+         
           </nav>
+       
           <div className="auth-wrapper">
             <div className="auth-inner">
               <Routes>
