@@ -1,7 +1,8 @@
-import React from 'react'
+import React  from 'react'
 import { useEffect } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useNavigate } from 'react-router-dom';
+import IncDecCounter from "./IncDecCounter";
 
 export default function Homepage() {
   const navigate = useNavigate()
@@ -11,11 +12,12 @@ export default function Homepage() {
     }
   })
   return (
+    <>
     <div>
       <h1> Welcome To UYO Rooms </h1>
       <div className='my-3'>
         <Dropdown>
-          <Dropdown.Toggle variant="outline-primary" id="dropdown-basic">
+          <Dropdown.Toggle variant="primary" id="dropdown-basic">
             Select City/Village
           </Dropdown.Toggle>
 
@@ -27,8 +29,13 @@ export default function Homepage() {
         </Dropdown>
 
       </div>
-
-      <button className="btn btn-danger my-2"
+      <div className='my-2'>
+        <h5>Rooms :</h5><IncDecCounter/>
+</div>
+<div className='my-2'>
+        <h5>Guests :</h5><IncDecCounter/>
+</div>
+      <button className="btn btn-danger my-3"
         onClick={() => {
           localStorage.removeItem('token')
           navigate("/sign-in")
@@ -38,6 +45,7 @@ export default function Homepage() {
       </button>
 
     </div>
+    </>
   )
 }
 

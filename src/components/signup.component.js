@@ -20,9 +20,8 @@ const SignUp = () => {
             // save the authtoken and redirect
             localStorage.setItem('token', json.authtoken);
             navigate("/sign-in")
-
         } else {
-            alert("Invalid Details")
+           alert("Invalid Credentials")
         }
     };
 
