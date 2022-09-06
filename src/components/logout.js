@@ -11,8 +11,9 @@ export default function Logout() {
       }
     })
     return (
-
-<button className="btn btn-outline-danger my-1"
+      <>
+      {localStorage.getItem('token')?
+<button className="btn btn-danger my-1"
 onClick={() => {
   localStorage.removeItem('token')
   navigate("/sign-in")
@@ -20,5 +21,8 @@ onClick={() => {
 >
 Logout
 </button>
+:null
+}
+</>
     )
 }
